@@ -10,7 +10,7 @@ img {
 
 h1 {
 	color: $brand-color;
-	font-size: 1.5rem;
+	font-size: 1.3rem;
 	line-height: 1rem;
 }
 
@@ -31,10 +31,16 @@ a {
 	color: $text-grey;
 }
 
+a:hover {
+	text-decoration: underline;
+	text-decoration-color: $link-color;;
+}
+
 ul {
 	list-style-type: none;
 	text-align: left;
 	padding: 0px;
+	margin: 0;
 }
 
 li {
@@ -46,4 +52,12 @@ button {
 	color: white;
 	border: 0;
 	background-color: $brand-color;
+}
+
+td {
+	font-size: .75em;
+}
+
+tr {
+	border-top: 1px solid #ccc;
 }

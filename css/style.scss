@@ -107,94 +107,6 @@
     Styling
 \*------------------------------*/
 
-body {
-    background-color: $fill-color;
-}
-
-.nav {
-    overflow: hidden;
-    height: 5em;
-    background-color: #FFFFFF;
-    border-bottom: .5px solid $fill-color;
-    text-align: center;
-    vertical-align: center;
-    padding: 0 .5rem 0 .5rem;
-    h1 {
-        padding-bottom: 0;
-        margin-bottom: 0;
-    }
-    img {
-        height: 2em;
-    }
-
-    p {
-        margin: .25em auto;
-    }
-    li {
-        vertical-align: middle;
-    }
-}
-
-.left-nav {
-    float: left;
-}
-
-.right-nav {
-    float: right;
-}
-
-.hero-nav {
-    padding: .25em;
-    margin: .25em auto;
-    a {
-        padding: .5em;
-    }
-    a:hover {
-        background-color: $hover-color;
-        border: 1px solid $hover-color;
-        border-radius: 3px;
-        color: white;
-    }
-}
-
-.about img {
-    width: 100%;
-    border-bottom: 1px solid #ccc;
-    }
-
-.about h1 {
-    text-align: left;
-    color: $link-color;
-}
-
-.about p {
-    text-align: left;
-    color: $text-grey;
-}
-
-.about .button {
-    font-size: .8em;
-    color: $link-color;
-    width: 78%;
-    text-align: center;
-    background-color: $fill-color;
-    box-shadow: none;
-    padding: .5em, auto;
-    height: 2em;
-    margin-bottom: 1em;
-}
-
-.about .tr {
-    border-top: #ccc;
-    border-bottom: #ccc;
-}
-
-.table {
-    width: 100%;
-    color: $link-color;
-    text-align: left;
-}
-
 .column {
     background: #FFF;
     border: .5px solid #ccc;
@@ -207,25 +119,6 @@ body {
 .column-1 {
     background-color: $fill-color;
     border: none;
-}
-
-.get-started {
-    margin: 0 auto;
-    background-color: white;
-    border-bottom: .5px solid $fill-color;
-    h2 {
-        max-width: 15em;
-    }
-}
-
-.get-started p {
-    font-size: .9rem;
-    line-height: 1.6em;
-    color: $TIY-color;
-}
-
-.get-started .column-1 {
-    background-color: #fff;
 }
 
 .column-5 {
@@ -246,23 +139,213 @@ body {
     margin-bottom: 0;
 }
 
+body {
+    background-color: $fill-color;
+}
 
-
-.button {
-    width: 7em;
-    height: auto;
-    background-color: $brand-color;
-    border-radius: 3px;
-    box-shadow: 1px 1px 1px black;
-    padding: .1em 1em;
-    h2 {
-        color: white;
-        text-align: center;
+.nav {
+    height: 4em;
+    overflow: hidden;
+    background-color: #FFFFFF;
+    border-bottom: .5px solid $fill-color;
+    text-align: center;
+    padding: 0 .5rem 0 .5rem;
+    h1 {
+        padding-bottom: 0;
+        margin-bottom: 0;
+    }
+    img {
+        height: 2em;
+    }
+    p {
+        margin: .25em auto;
+    }
+    a :hover {
+        text-decoration: none;
     }
 }
 
+.left-nav {
+    float: left;
+}
+
+.right-nav {
+    float: right;
+}
+
+.heronav {
+    margin: auto;
+    width: 968px;
+}
+
+.heronav img {
+    width: 100%;
+}
+
+.heronav {
+    ul {
+        margin: .6em 3px;
+    }
+    a {
+        padding: .25em;
+    }
+    a:hover {
+        background-color: $TIY-color;
+        border: 1px solid $TIY-color;
+        border-radius: 3px;
+        color: white;
+    }
+}
+
+.meat {
+    margin: auto;
+    width: 968px;
+}
+
+
+.about img {
+    width: 100%;
+    border-bottom: 1px solid $text-grey;
+    }
+
+.about h1 {
+    text-align: left;
+    color: $link-color;
+}
+
+.about p {
+    text-align: left;
+    color: $text-grey;
+}
+
+.button {
+    box-shadow: none;
+    height: 2em;
+    width: 100%;
+    background-color: $fill-color;
+    font-size: .8em;
+    color: $link-color;
+    text-align: center;
+    padding: .25em;
+    margin: 1em auto;
+    border-radius: 3px;
+    &:hover {
+        background-color: #ccc;
+    }
+}
+
+.organizers {
+    border-top: 1px solid $fill-color;
+    border-bottom: 1px solid $fill-color;
+    text-align: left;
+}
+
+.organizers .org-list {
+    float: left;
+    width: 50%
+}
+
+.organizers .owl {
+    width: 20%;
+    float: right;
+    margin: .5em;
+}
+
+.organizers .button {
+    margin-top: 2em;
+    clear: both;
+}
+
+.were-about {
+    text-align: left;
+}
+
+.were-about h2 {
+    color: black;
+    font-weight: normal;
+    line-height: 1em;
+}
+
+.were-about a {
+    color: $link-color;
+}
+
+.meattwo {
+    padding: 1em;
+}
+
+.meattwo h2 {
+    color: black;
+    text-align: left;
+    font-weight: normal;
+    border-bottom: 1px solid $fill-color;
+}
+
+.otherlistingicon {
+    float: left;
+    clear: both;
+}
+
+.otherlistingtext {
+    text-align: left;
+    float: right;
+    a {
+        color: $link-color;
+    }
+}
+
+.welcome {
+    padding: 1em;
+    h1 {
+    text-align: left;
+    }
+}
+
+.button .suggest {
+    text-align: left;
+}
+
+
+.get-started {
+    margin: 0 auto;
+    background-color: white;
+    border-bottom: .5px solid $fill-color;
+    h2 {
+        max-width: 15em;
+    }
+}
+
+.get-started p {
+    font-size: .9rem;
+    line-height: 1.6em;
+    color: $TIY-color;
+}
+
+.get-started .column-1 {
+    background-color: #fff;
+}
+
+.coffeetext p {
+    float: left;
+    width: 70%;
+    text-align: left;
+}
+
+.rightside img {
+    float: right;
+    width: 20%;
+}
+
+.sig {
+    width: 100%;
+    clear: both;
+}
+
+
+
+
 .footer {
-    background-color: $hover-color;
+    background-color: $TIY-color;
     border-radius: 3px;
     color: #FFF;
     padding: 10px 5px;
