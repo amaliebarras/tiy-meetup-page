@@ -1,0 +1,299 @@
+/*Imports, yo*/
+@import '_variables.scss';
+@import '_universal.scss';
+
+/*------------------------------*\
+    Grid System
+\*------------------------------*/
+
+.row, 
+.column {
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.row:before,
+.row:after {
+    content: " ";
+    display: table;
+}
+
+.row:after {
+    clear: both;
+}
+
+.column {
+    position: relative;
+    float: left;
+    display: block;
+}
+
+.column + .column {
+    margin-left: 1.6%;
+}
+
+.column-1 {
+    width: 6.86666666667%;
+}
+
+.column-2 {
+    width: 15.3333333333%;
+}
+
+.column-3 {
+    width: 23.8%;
+}
+
+.column-4 {
+    width: 32.2666666667%;
+}
+
+.column-5 {
+    width: 40.7333333333%;
+}
+
+.column-6 {
+    width: 49.2%;
+}
+
+.column-7 {
+    width: 57.6666666667%;
+}
+
+.column-8 {
+    width: 66.1333333333%;
+}
+
+.column-9 {
+    width: 74.6%;
+}
+
+.column-10 {
+    width: 83.0666666667%;
+}
+
+.column-11 {
+    width: 91.5333333333%;
+}
+
+.column-12 {
+    width: 100%;
+    margin-left: 0;
+}
+
+@media only screen and (max-width: 550px) {
+    .column-1, 
+    .column-2, 
+    .column-3, 
+    .column-4, 
+    .column-5, 
+    .column-6, 
+    .column-7, 
+    .column-8, 
+    .column-9, 
+    .column-10, 
+    .column-11, 
+    .column-12 {
+        float: none;
+        width: auto;
+    }
+  
+    .column + .column {
+        margin-left: 0;
+    }
+}
+
+/*------------------------------*\
+    Styling
+\*------------------------------*/
+
+body {
+    background-color: $fill-color;
+}
+
+.nav {
+    overflow: hidden;
+    height: 5em;
+    background-color: #FFFFFF;
+    border-bottom: .5px solid $fill-color;
+    text-align: center;
+    vertical-align: center;
+    padding: 0 .5rem 0 .5rem;
+    h1 {
+        padding-bottom: 0;
+        margin-bottom: 0;
+    }
+    img {
+        height: 2em;
+    }
+
+    p {
+        margin: .25em auto;
+    }
+    li {
+        vertical-align: middle;
+    }
+}
+
+.left-nav {
+    float: left;
+}
+
+.right-nav {
+    float: right;
+}
+
+.hero-nav {
+    padding: .25em;
+    margin: .25em auto;
+    a {
+        padding: .5em;
+    }
+    a:hover {
+        background-color: $hover-color;
+        border: 1px solid $hover-color;
+        border-radius: 3px;
+        color: white;
+    }
+}
+
+.about img {
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+    }
+
+.about h1 {
+    text-align: left;
+    color: $link-color;
+}
+
+.about p {
+    text-align: left;
+    color: $text-grey;
+}
+
+.about .button {
+    font-size: .8em;
+    color: $link-color;
+    width: 78%;
+    text-align: center;
+    background-color: $fill-color;
+    box-shadow: none;
+    padding: .5em, auto;
+    height: 2em;
+    margin-bottom: 1em;
+}
+
+.about .tr {
+    border-top: #ccc;
+    border-bottom: #ccc;
+}
+
+.table {
+    width: 100%;
+    color: $link-color;
+    text-align: left;
+}
+
+.column {
+    background: #FFF;
+    border: .5px solid #ccc;
+    border-radius: 3px;
+    color: $fill-color;
+    min-height: 30px;
+    text-align: center;
+}
+
+.column-1 {
+    background-color: $fill-color;
+    border: none;
+}
+
+.get-started {
+    margin: 0 auto;
+    background-color: white;
+    border-bottom: .5px solid $fill-color;
+    h2 {
+        max-width: 15em;
+    }
+}
+
+.get-started p {
+    font-size: .9rem;
+    line-height: 1.6em;
+    color: $TIY-color;
+}
+
+.get-started .column-1 {
+    background-color: #fff;
+}
+
+.column-5 {
+    border: none;
+    h2 {
+        text-align: left;
+        color: $TIY-color;
+    }
+}
+
+
+.row {
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.row:last-child {
+    margin-bottom: 0;
+}
+
+
+
+.button {
+    width: 7em;
+    height: auto;
+    background-color: $brand-color;
+    border-radius: 3px;
+    box-shadow: 1px 1px 1px black;
+    padding: .1em 1em;
+    h2 {
+        color: white;
+        text-align: center;
+    }
+}
+
+.footer {
+    background-color: $hover-color;
+    border-radius: 3px;
+    color: #FFF;
+    padding: 10px 5px;
+    min-height: 30px;
+    text-align: center;
+    ul {
+        margin: 0 12.5%;
+        padding-top: 1em;
+    }
+    a {
+        color: white;
+    }
+}
+
+.footer-cta {    
+    overflow: hidden;
+    height: 3em;
+    border-bottom: .5px solid $text-grey;
+    ul {
+        vertical-align: middle;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .row {
+        margin-bottom: 0;
+    }
+    .column {
+        margin-bottom: 10px;
+    }
+    .row:last-child .column:last-child {
+        margin-bottom: 0;
+    }
+}
